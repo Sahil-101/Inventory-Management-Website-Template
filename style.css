@@ -42,3 +42,52 @@
   border-width: 0.001rem;
   padding: 0;
 }
+
+.inventory-master-list {
+  padding: 0.5rem 0;
+  border-bottom: solid rgba(0, 0, 0, 0.203);
+  border-width: 0.001rem;
+}
+.inventory-master-list h3 {
+  display: inline-block;
+  margin-right: auto;
+}
+
+.inventory-master-list button {
+  float: right;
+  right: 0%;
+  border: solid grey;
+  border-width: 0.1rem;
+  width: 10rem;
+}
+
+@media only screen and (max-width: 525px) {
+  .inventory-master-list button {
+    display: block;
+    float: none;
+  }
+}
+
+.input-wrapper .row .col-lg-4 input,
+select {
+  display: block;
+  width: 100%;
+  height: 2rem;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+.options button {
+  padding: 0.5rem 2.5rem;
+  margin-right: 3rem;
+  background-color: white;
+  border: solid rgba(0, 0, 0, 0.203);
+  border-width: 0.001rem;
+}
+.input-wrapper .row {
+  padding: 0.5rem;
+}
