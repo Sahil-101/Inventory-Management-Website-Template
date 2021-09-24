@@ -91,3 +91,7 @@ select {
 .input-wrapper .row {
   padding: 0.5rem;
 }
+
+table {
+  margin-top: 3rem;
+}
