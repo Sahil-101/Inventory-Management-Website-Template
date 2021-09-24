@@ -1,7 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #title {
   text-align: left;
   width: 100%;
-  padding: 1%;
+  padding: 1% 0%;
   background-color: #4c51e6;
   color: #dfd326;
   font-weight: 0.5rem;
@@ -11,14 +17,28 @@
   font-weight: 400;
 }
 
-#sidebar {
-  display: inline-block;
-  height: 100vh;
-  width: 30%;
+.sidebar-items div {
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
-#mainContent {
-  display: inline-block;
-  width: 0%;
-  height: 100vh;
+.sidebar-divs h5 {
+  border: solid rgba(0, 0, 0, 0.203);
+  border-width: 0.001rem;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.6rem 0.5rem;
+}
+
+.inventory-heading {
+  background-color: #292a10;
+  color: white;
+  font-weight: bold !important;
+}
+
+.sidebar-wrapper {
+  border: solid rgba(0, 0, 0, 0.203);
+  border-width: 0.001rem;
+  padding: 0;
 }
