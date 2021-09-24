@@ -95,3 +95,7 @@ select {
 table {
   margin-top: 3rem;
 }
+
+.table-container {
+  overflow-x: auto !important;
+}
