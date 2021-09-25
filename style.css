@@ -65,13 +65,6 @@
   width: 10rem;
 }
 
-@media only screen and (max-width: 525px) {
-  .inventory-master-list button {
-    display: block;
-    float: none;
-  }
-}
-
 .input-wrapper .row .col-lg-4 input,
 select {
   display: block;
@@ -128,4 +121,35 @@ tr {
   border: solid rgba(0, 0, 0, 0.203);
   border-width: 0.001rem;
   margin-left: 1rem;
+}
+
+#toggle_button {
+  width: 4rem;
+  background-color: white;
+  border: solid rgba(0, 0, 0, 0.203);
+  border-width: 0.001rem;
+  border-radius: 1rem 1rem;
+}
+
+@media only screen and (max-width: 799px) {
+  .inventory-master-list button {
+    display: block;
+    float: none;
+  }
+  #toggle_button {
+    display: inline-block;
+  }
+
+  #sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #sidebar {
+    display: inline-block;
+  }
+  #toggle_button {
+    display: none;
+  }
 }

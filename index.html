@@ -20,7 +20,12 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm col-md-4 col-lg sidebar-wrapper">
+        <button onclick="toogle()" id="toggle_button">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"
+          />
+        </button>
+        <div class="col-sm col-md-4 col-lg sidebar-wrapper" id="sidebar">
           <div class="sidebar-divs">
             <h5 class="inventory-heading">Inventory</h5>
             <div class="sidebar-items px-4">
@@ -173,5 +178,15 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggle() {
+        if (document.getElementById("sidebar").style.display === "none") {
+          document.getElementById("sidebar").style.display = "inline-block";
+        } else {
+          document.getElementById("sidebar").style.display = "none";
+        }
+      }
+      document.getElementById("toggle_button").onclick = toggle;
+    </script>
   </body>
 </html>
